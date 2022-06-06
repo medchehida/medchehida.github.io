@@ -1,0 +1,285 @@
+:root {
+    --gray: #1E092E;
+    --purple: #5500C1;
+    --purple2: #1E092E;
+    --pink: #c600e0;
+    --white: #fff;
+}
+
+.main-dark {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    --bg-color: var(--purple2);
+    --main-color: var(--purple);
+    --secondary-color: var(--pink);
+    --input-color: #fff;
+    --text-color: var(--white);
+}
+
+.main-light {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    --bg-color: var(--white);
+    --main-color: var(--purple);
+    --secondary-color: var(--pink);
+    --input-color: #fff;
+    --text-color: var(--gray);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: 500ms;
+}
+
+h1 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0 5rem 0;
+    align-items: stretch;
+    align-content: center;
+    flex-direction: row;
+}
+
+#logo {
+    display: flex;
+}
+
+#logo p {
+    font-size: 2rem;
+    color: var(--main-color);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: vertical-text;
+}
+
+#menu {
+    justify-content: space-between;
+    display: flex;
+    width: 50%;
+    padding: 0px 50px 0px 50px;
+    align-items: center;
+    border-radius: 50px;
+    background: var(--main-color);
+}
+
+a {
+    color: white;
+    font-size: 1rem;
+    transition: 500ms;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+#switch {
+    background: var(--main-color);
+    border-radius: 50px;
+    display: block;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+#switch:hover {
+    background: var(--secondary-color);
+}
+
+#switch img {
+    width: 30px;
+    height: 30px;
+    padding: 0px 2rem 0px 2rem;
+}
+
+.about {
+    display: flex;
+    color: var(--text-color);
+    text-align: justify;
+    align-items: center
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.about img:hover {
+    opacity: 80%;
+}
+
+#sperator {
+    height: 10px;
+    width: 100px;
+    border-radius: 10px;
+    background: var(--main-color);
+    margin: 3rem auto 3rem;
+}
+
+#gallery {
+    display: block;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.img1 {
+    width: 30%;
+    height: 400px;
+    margin-right: 1rem;
+    background-image: url(img/Plastic_Juice_Cup_Mockup_v02\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover,
+.img6:hover {
+    transform: scale(0.9);
+}
+
+.img2 {
+    width: 70%;
+    height: 400px;
+    background-size: contain;
+    background-image: url(img/Square\ Business\ Card\ Mockup\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img3 {
+    width: 70%;
+    height: 400px;
+    margin-right: 1rem;
+    background-image: url(img/Store_Sign_Mockup_4\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img4 {
+    width: 30%;
+    height: 400px;
+    background-size: contain;
+    background-image: url(img/Untitled-2\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img5 {
+    width: 50%;
+    height: 400px;
+    margin-right: 1rem;
+    background-image: url(img/CD\ Artwork\ Mockup.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.img6 {
+    width: 50%;
+    height: 400px;
+    background-size: contain;
+    background-image: url(img/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#contact {
+    display: flex;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+}
+
+#left,
+#right {
+    flex: 50%;
+}
+
+#left p {
+    padding-right: 50px;
+    color: #5500C1;
+    font-size: 3rem;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    background-color: #F0F0F0;
+    color: #1E092E;
+    width: 100%;
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 1.2rem;
+    margin: 1rem 0 1rem 0;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+    font-size: 1rem;
+    border: 0;
+}
+
+input::content {
+    padding-left: 30px;
+}
+
+button {
+    background-color: #c600e0;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    font-size: 1rem;
+    width: 100%;
+    border: 0;
+}
+
+button:hover {
+    background-color: #5500C1;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    font-size: 1rem;
+    width: 100%;
+}
